@@ -1,0 +1,30 @@
+# Runtime data (DB, logs, Waterloo browser profile, token cache, page captures).
+# It now lives outside the project (aggregator/paths.py); these guard the old location.
+data/
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.bin
+
+# Secrets and OAuth client files: never committed (tokens live in the OS keychain)
+.env
+.env.*
+credentials*.json
+client_secret*.json
+token*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+
+# Personal working notes (kept locally, not shared)
+CLAUDE.md
+NEXT.md
